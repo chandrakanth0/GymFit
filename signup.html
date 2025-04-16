@@ -9,7 +9,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Energym - Class Schedule</title>
+  <title>Energym - Sign Up</title>
 
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -22,95 +22,83 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
   <style>
-    /* Table Styling */
-    .class-schedule {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      /* Soft shadow for depth */
-      border-radius: 8px;
-      /* Rounded corners */
-      overflow: hidden;
-      /* Hide overflow from rounded corners */
+    .signup_section {
+      padding: 80px 0;
+      /* Adjust padding as needed */
     }
 
-    .class-schedule th,
-    .class-schedule td {
-      border: 1px solid #e0e0e0;
-      padding: 12px 10px;
+    .signup-form {
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: #f7f7f7;
+      /* A light background to stand out */
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* Subtle shadow */
+    }
+
+    .signup-form h2 {
       text-align: center;
-    }
-
-    .class-schedule th {
-      background-color: #f89f1b;
-      /* Energym's primary color */
-      color: white;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 0.9em;
-    }
-
-    .class-schedule .day-header {
-      background-color: #f2f2f2;
-      /* Lighter background for days */
-      font-weight: 600;
-      color: #333;
-    }
-
-    .class-schedule tbody tr:nth-child(even) {
-      background-color: #f9f9f9;
-      /* Alternate row colors */
-    }
-
-    .class-schedule tbody tr:hover {
-      background-color: #f0f0f0;
-      /* Hover effect */
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .class-schedule {
-        overflow-x: auto;
-        /* Enable horizontal scrolling on small screens */
-      }
-
-      .class-schedule th,
-      .class-schedule td {
-        padding: 8px 6px;
-        font-size: 0.8em;
-      }
-    }
-
-    /* Heading Styles */
-    .heading_container h2 {
+      margin-bottom: 30px;
       color: #282d32;
-      /* Darker text for headings */
+      /* Match primary text color */
       font-weight: bold;
-      position: relative;
-      /* For the underline effect */
-      padding-bottom: 10px;
+    }
+
+    .form-group {
       margin-bottom: 20px;
-      /* Spacing below the heading */
     }
 
-    .heading_container h2 span {
-      color: #f89f1b;
-      /* Energym's primary color */
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+      font-weight: 600;
     }
 
-    .heading_container h2::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      /* Center the line */
-      transform: translateX(-50%);
-      width: 50px;
-      /* Width of the underline */
-      height: 2px;
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      /* Important for padding to be inside the width */
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 14px;
       background-color: #f89f1b;
-      /* Underline color */
+      /* Match primary button color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-group button:hover {
+      background-color: #e08e08;
+      /* Darker shade for hover */
+    }
+
+    .form-group .login-link {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    .form-group .login-link a {
+      color: #f89f1b;
+      /* Match link color */
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .form-group .login-link a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -150,7 +138,6 @@
           </div>
         </nav>
       </div>
-
     </header>
     <section class=" slider_section position-relative">
       <div class="container">
@@ -162,7 +149,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="d-flex flex-column flex-lg-row align-items-center">
+              <div class="d-flex  flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
                   <li class="nav-item ">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -173,7 +160,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="service.html">Services </a>
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                   </li>
                   <li class="nav-item">
@@ -187,11 +174,10 @@
                     <a class="nav-link" href="schedule.html">schedule</a>
                   </li>
 
-
                   <li class="nav-item">
                     <a class="nav-link" href="login.html">Login</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a class="nav-link" href="signup.html">sign up</a>
                   </li>
 
@@ -205,86 +191,44 @@
         </div>
       </div>
     </section>
-  </div>
+    </div>
 
-  <section class="contact_section layout_padding">
+  <section class="signup_section layout_padding">
     <div class="container">
-      <div class="heading_container">
-        <h2>
-          <span>
-            Class Schedule
-          </span>
-        </h2>
-      </div>
-      <div class="layout_padding2-top">
-        <div class="row">
-          <div class="col-md-12">
-            <table class="class-schedule">
-              <thead>
-                <tr>
-                  <th>Time</th>
-                  <th class="day-header">Monday</th>
-                  <th class="day-header">Tuesday</th>
-                  <th class="day-header">Wednesday</th>
-                  <th class="day-header">Thursday</th>
-                  <th class="day-header">Friday</th>
-                  <th class="day-header">Saturday</th>
-                  <th class="day-header">Sunday</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>6:00 AM - 7:00 AM</td>
-                  <td>Yoga</td>
-                  <td>-</td>
-                  <td>Yoga</td>
-                  <td>-</td>
-                  <td>Yoga</td>
-                  <td>Pilates</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>7:00 AM - 8:00 AM</td>
-                  <td>-</td>
-                  <td>Spin Class</td>
-                  <td>-</td>
-                  <td>Spin Class</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>8:00 AM - 9:00 AM</td>
-                  <td>CrossFit</td>
-                  <td>-</td>
-                  <td>CrossFit</td>
-                  <td>-</td>
-                  <td>CrossFit</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>9:00 AM - 10:00 AM</td>
-                  <td>-</td>
-                  <td>Zumba</td>
-                  <td>-</td>
-                  <td>Zumba</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>Open Gym</td>
-                </tr>
-                <tr>
-                  <td>...</td>
-                  <td colspan="7">...</td>
-                </tr>
-              </tbody>
-            </table>
+      <div class="signup-form">
+        <h2>Sign Up</h2>
+        <form action="#">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
           </div>
-        </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password"
+              required>
+          </div>
+          <div class="form-group">
+            <button type="submit">Sign Up</button>
+          </div>
+          <div class="form-group login-link">
+            <a href="login.html">Already have an account? Login</a>
+          </div>
+        </form>
       </div>
     </div>
   </section>
-
   <section class="info_section layout_padding2-top">
     <div class="container">
       <div class="info_form">
@@ -427,10 +371,10 @@
       </div>
     </div>
   </section>
+
   <section class="container-fluid footer_section ">
 
   </section>
-
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
